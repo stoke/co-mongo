@@ -1,4 +1,26 @@
-# co-mongo
+# mongodb-co
+
+Basically a supported version of [co-mongo](https://github.com/thomseddon/co-mongo)
+
+As for now, there are two differences between mongodb-co and the original co-mongo:
+
+ObjectID is exposed directly:
+
+````javascript
+require('mongodb-co').ObjectID
+```
+And unordered bulk operations are also supported:
+
+````javascript
+var collection = yield db.collection('collection'),
+    batch = collection.initializeUnorderedBulkOp();
+
+batch.find(...).update(...);
+
+var res = yield batch.execute();
+```
+
+I leave the original Readme.md here just for reference:
 
 A mongodb wrapper that plays nicely with [co](https://github.com/visionmedia/co).
 
