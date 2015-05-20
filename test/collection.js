@@ -226,8 +226,6 @@ describe('collection', function () {
     it('should return options', function (done) {
       co(function *() {
         var res = yield test.options();
-        
-        console.dir(res);
 
         res.should.eql({ create: 'test_collection' });
       })(done);
