@@ -6,12 +6,12 @@ As for now, there are two differences between mongodb-co and the original co-mon
 
 ObjectID is exposed directly:
 
-````javascript
+```javascript
 require('mongodb-co').ObjectID
 ```
 And unordered bulk operations are also supported:
 
-````javascript
+```javascript
 var collection = yield db.collection('collection'),
     batch = collection.initializeUnorderedBulkOp();
 
