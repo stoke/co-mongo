@@ -96,3 +96,5 @@ Db.get = function () {
     });
   };
 };
+
+Db.ObjectID = mongo.ObjectID;
