@@ -1,5 +1,5 @@
 {
-  "name": "co-mongo",
+  "name": "mongodb-co",
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
   "author": "Thom Seddon",
   "repository" : {
     "type" : "git",
-    "url" : "https://github.com/thomseddon/co-mongo"
+    "url" : "https://github.com/stoke/co-mongo"
   },
   "license": "MIT",
   "dependencies": {
